@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Prática 12 - Exercício 01</title>
+		<link rel="stylesheet" href="pratica12exercicio01.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	</head>
+	<body>
+		
+		<div class="container">
+			<div class="cabecalho"><h1>Cine FliX</h1></div>
+			<div class="images">
+				<img src="images/img01_wall_e.jpg" onclick="iniciaModal('modal01')"/>
+				<img src="images/img02_chihiro.jpg" onclick="iniciaModal('modal02')"/>
+				<img src="images/img03_divertida.jpg" onclick="iniciaModal('modal03')"/>
+				<img src="images/img04_malvado.jpg" onclick="iniciaModal('modal04')"/>
+				<img src="images/img05_incriveis.jpg" onclick="iniciaModal('modal05')"/>
+				<img src="images/img06_nemo.jpg" onclick="iniciaModal('modal06')"/>
+				<img src="images/img07_up.jpg" onclick="iniciaModal('modal07')"/>
+				<img src="images/img08_leao.jpg" onclick="iniciaModal('modal08')"/>
+				<img src="images/img09_zootopia.jpg" onclick="iniciaModal('modal09')"/>
+				<img src="images/img10_frozen.jpg" onclick="iniciaModal('modal10')"/>
+			</div>
+			<div class="rodape">
+				<h5>Cine FliX</h5>
+				<p>Av. Afonso Pena, nº 1800, Centro, Belo Horizonte, MG, Brasil, CEP.: 31.435-700.</p>
+				<div class="contato">
+					<p><i class="fas fa-phone"> +55 31 3798-4498</i></p>
+					<p><i class="fab fa-whatsapp"> +55 31 9 9985-6847</i></p>
+					<p><i class="fab fa-facebook-square"> facebook</i></p>
+				</div>
+			</div>
+		</div>
+		<div id="modal01" class="modalContainer">
+			<div class="modal">
+
+				<img src="images/img01_wall_e.jpg" class="modalImg"/>
+				<div class="modalConteudo">
+					<h3 class="subtitulo">
+						<ul>
+							<li>Wall.E;</li>
+							<li>Gênero: Animação;</li>
+							<li>Formato de exibição: 2D;</li>
+							<li>Sala 2;</li>
+							<li>Horário: de terça a domingo - às 17:50 e às 20:00;</li>
+							<li>Preço: Inteira - R$ 15,00 / Meia - R$ 7,50 (mediante apresentação da carteira de estudante na bilheteria).</li>
+						</ul>
+					</h3>
+				</div>
+				<button class="fechar">X</button>
+			</div>
+		</div>
+
+		<div id="modal02" class="modalContainer">
+			<div class="modal">
+
+				<img src="images/img02_chihiro.jpg" class="modalImg"/>
+				<div class="modalConteudo">
+					<h3 class="subtitulo">
+						<ul>
+							<li>A Viagem de Chihiro;</li>
+							<li>Gênero: Animação;</li>
+							<li>Formato de exibição: 2D;</li>
+							<li>Sala 3;</li>
+							<li>Horário: de terça a domingo - às 18:50 e às 21:00;</li>
+							<li>Preço: Inteira - R$ 15,00 / Meia - R$ 7,50 (mediante apresentação da carteira de estudante na bilheteria).</li>
+						</ul>
+					</h3>
+				</div>
+				<button class="fechar">X</button>
+			</div>
+		</div>
+
+		<div id="modal03" class="modalContainer">
+			<div class="modal">
+
+				<img src="images/img03_divertida.jpg" class="modalImg"/>
+				<div class="modalConteudo">
+					<h3 class="subtitulo">
+						<ul>
+							<li>Divertida Mente;</li>
+							<li>Gênero: Animação;</li>
+							<li>Formato de exibição: 2D;</li>
+							<li>Sala 1;</li>
+							<li>Horário: de terça a domingo - às 16:30 e às 18:40;</li>
+							<li>Preço: Inteira - R$ 15,00 / Meia - R$ 7,50 (mediante apresentação da carteira de estudante na bilheteria).</li>
+						</ul>
+					</h3>
+				</div>
+				<button class="fechar">X</button>
+			</div>
+		</div>
+
+		<div id="modal04" class="modalContainer">
+			<div class="modal">
+
+				<img src="images/img04_malvado.jpg" class="modalImg"/>
+				<div class="modalConteudo">
+					<h3 class="subtitulo">
+						<ul>
+							<li>Meu Malvado Favorito;</li>
+							<li>Gênero: Animação;</li>
+							<li>Formato de exibição: 2D;</li>
+							<li>Sala 4;</li>
+							<li>Horário: de terça a domingo - às 14:30 - às 16:40 e às 18:50;</li>
+							<li>Preço: Inteira - R$ 15,00 / Meia - R$ 7,50 (mediante apresentação da carteira de estudante na bilheteria).</li>
+						</ul>
+					</h3>
+				</div>
+				<button class="fechar">X</button>
+			</div>
+		</div>
+
+		<div id="modal05" class="modalContainer">
+			<div class="modal">
+
+				<img src="images/img05_incriveis.jpg" class="modalImg"/>
+				<div class="modalConteudo">
+					<h3 class="subtitulo">
+						<ul>
+							<li>Os Incríveis;</li>
+							<li>Gênero: Animação;</li>
+							<li>Formato de exibição: 2D;</li>
+							<li>Sala 5;</li>
+							<li>Horário: de terça a domingo - às 17:00 e às 19:10;</li>
+							<li>Preço: Inteira - R$ 15,00 / Meia - R$ 7,50 (mediante apresentação da carteira de estudante na bilheteria).</li>
+						</ul>
+					</h3>
+				</div>
+				<button class="fechar">X</button>
+			</div>
+		</div>
+
+		<div id="modal06" class="modalContainer">
+			<div class="modal">
+
+				<img src="images/img06_nemo.jpg" class="modalImg"/>
+				<div class="modalConteudo">
+					<h3 class="subtitulo">
+						<ul>
+							<li>Procurando Nemo;</li>
+							<li>Gênero: Animação;</li>
+							<li>Formato de exibição: 2D;</li>
+							<li>Sala 6;</li>
+							<li>Horário: de terça a domingo - às 17:50 e às 20:00;</li>
+							<li>Preço: Inteira - R$ 15,00 / Meia - R$ 7,50 (mediante apresentação da carteira de estudante na bilheteria).</li>
+						</ul>
+					</h3>
+				</div>
+				<button class="fechar">X</button>
+			</div>
+		</div>
+
+		<div id="modal07" class="modalContainer">
+			<div class="modal">
+
+				<img src="images/img07_up.jpg" class="modalImg"/>
+				<div class="modalConteudo">
+					<h3 class="subtitulo">
+						<ul>
+							<li>Up Altas Aventuras;</li>
+							<li>Gênero: Animação;</li>
+							<li>Formato de exibição: 2D;</li>
+							<li>Sala 7;</li>
+							<li>Horário: de terça a domingo - às 14:50 e às 17:00;</li>
+							<li>Preço: Inteira - R$ 15,00 / Meia - R$ 7,50 (mediante apresentação da carteira de estudante na bilheteria).</li>
+						</ul>
+					</h3>
+				</div>
+				<button class="fechar">X</button>
+			</div>
+		</div>
+
+		<div id="modal08" class="modalContainer">
+			<div class="modal">
+
+				<img src="images/img08_leao.jpg" class="modalImg"/>
+				<div class="modalConteudo">
+					<h3 class="subtitulo">
+						<ul>
+							<li>O Rei Leão;</li>
+							<li>Gênero: Animação;</li>
+							<li>Formato de exibição: 2D;</li>
+							<li>Sala 8;</li>
+							<li>Horário: de terça a domingo - às 14:30 e às 16:40;</li>
+							<li>Preço: Inteira - R$ 15,00 / Meia - R$ 7,50 (mediante apresentação da carteira de estudante na bilheteria).</li>
+						</ul>
+					</h3>
+				</div>
+				<button class="fechar">X</button>
+			</div>
+		</div>
+
+		<div id="modal09" class="modalContainer">
+			<div class="modal">
+
+				<img src="images/img09_zootopia.jpg" class="modalImg"/>
+				<div class="modalConteudo">
+					<h3 class="subtitulo">
+						<ul>
+							<li>Zootopia;</li>
+							<li>Gênero: Animação;</li>
+							<li>Formato de exibição: 2D;</li>
+							<li>Sala 9;</li>
+							<li>Horário: de terça a domingo - às 14:50 - às 17:00 e às 19:10;</li>
+							<li>Preço: Inteira - R$ 15,00 / Meia - R$ 7,50 (mediante apresentação da carteira de estudante na bilheteria).</li>
+						</ul>
+					</h3>
+				</div>
+				<button class="fechar">X</button>
+			</div>
+		</div>
+
+		<div id="modal10" class="modalContainer">
+			<div class="modal">
+
+				<img src="images/img10_frozen.jpg" class="modalImg"/>
+				<div class="modalConteudo">
+					<h3 class="subtitulo">
+						<ul>
+							<li>Frozen - uma Aventura Congelante;</li>
+							<li>Gênero: Animação;</li>
+							<li>Formato de exibição: 2D;</li>
+							<li>Sala 10;</li>
+							<li>Horário: de terça a domingo - às 15:00 e às 17:10;</li>
+							<li>Preço: Inteira - R$ 15,00 / Meia - R$ 7,50 (mediante apresentação da carteira de estudante na bilheteria).</li>
+						</ul>
+					</h3>
+				</div>
+				<button class="fechar">X</button>
+			</div>
+		</div>
+		<script src="pratica12exercicio01.js"></script>
+	</body>	
+</html>

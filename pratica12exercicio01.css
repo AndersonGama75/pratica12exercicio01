@@ -1,0 +1,135 @@
+.container {
+	position: relative;
+	background-color: black;
+	width: 780px;
+	height: 900px;
+	margin: 0 auto;
+}
+img {
+	height: 230px;
+	width: 160px;
+	cursor: pointer;
+	margin-left: 15px;
+	margin-top: 15px;
+}
+.images {
+	position: absolute;
+	background-color: black;
+	width: 740px;
+	left: 30px;
+	margin-top: 15px;
+}
+h1 {
+	text-align: center;
+	color: white;
+	font-size: 58px;
+	margin-top: 0;
+	padding-top: 20px;
+}
+.cabecalho {
+	background-color: #ff4500;
+	height: 100px;
+}
+.rodape {
+	background-color: #ff4500;
+	height: 100px;
+	margin-top: 780px;
+	color: white;
+	padding-left: 30px;	
+}
+.contato {
+	display: flex;
+}
+.contato > p {
+	margin-right: 30px;
+	margin-top: 0;
+}
+h5 {
+	padding-top: 25px;
+}
+.rodape > * {
+	margin: 0;
+	margin-bottom: 2px;
+}
+
+.modalContainer {
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0,0,0,.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2000;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+.modalContainer.mostrar {   /* Quando essas classes estiverem presentes.. */
+	display: flex;
+}
+.modal {
+	background-color: black;
+	width: 60%;
+	min-width: 300px;
+	padding: 40px;
+	border: 1px solid white;
+	box-shadow: 0 0 0 10px black;
+	position: relative;
+}
+@keyframes modal {
+	
+	from {
+		opacity: 0;
+		transform: translate3d(0, -160px, 0);
+	}
+	
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+.mostrar .modal {   /* Quando essas a classe 'modal' for filha da classe 'mostrar' executar a animação 'modal'. */
+	animation: modal .3s;
+}
+h3 {
+	color: white;
+	margin-left: 115px;
+	font-family: verdana;
+	font-weight: normal;
+}
+.modalConteudo {
+	border: 1px dashed white;
+	padding-left: 20px;
+}
+.modalImg {
+	margin-top: -20px;
+	margin-left: -20px;
+	float: left;
+}
+ul {
+	list-style: square;
+}
+.fechar {
+	position: absolute;
+	top: -20px;
+	right: -20px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 2px solid white;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+	box-shadow: 0 4px 4px 0 rgba(0,0,0,.3);
+	font-size: 1.2em;
+}
+.mostrar {
+
+}
+button:hover {
+	background-color: #b33100;
+}
+button:active {
+	width: 47px;
+	height: 47px;
+}
